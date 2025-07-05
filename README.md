@@ -13,7 +13,7 @@ This project automates the extraction of LinkedIn message threads that contain j
 
 - Python 3.7+
 - Google Chrome browser
-- ChromeDriver (compatible with your Chrome version)
+- [ChromeDriver](https://developer.chrome.com/docs/chromedriver/downloads) (compatible with your Chrome version)
 
 ## Installation
 
@@ -28,14 +28,14 @@ This project automates the extraction of LinkedIn message threads that contain j
     pip install -r requirements.txt
     ```
 
-3. Set your LinkedIn credentials as environment variables:
-    - `LINKEDIN_USERNAME`
-    - `LINKEDIN_PASSWORD`
+3. Copy `.env.example` to `.env` and set your LinkedIn credentials:
+    - `LINKEDIN_USERNAME` (your LinkedIn email or username)
+    - `LINKEDIN_PASSWORD` (your LinkedIn password)
 
-    On Windows (cmd):
+    Example:
     ```cmd
-    set LINKEDIN_USERNAME=your_email@example.com
-    set LINKEDIN_PASSWORD=your_password
+    copy .env.example .env
+    # Then edit .env to add your credentials
     ```
 
 ## Usage
